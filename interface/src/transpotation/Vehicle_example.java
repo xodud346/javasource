@@ -8,6 +8,15 @@ public class Vehicle_example {
 		
 		vehicle.run();//Vehicle 선언 -> Bus 구현
 //		vehicle.checkFare();
+		vehicle.electCharge();
+		
+		vehicle=new Taxi();
+		vehicle.run();
+		vehicle.electCharge();
+		
+		vehicle=new Airplain();
+		vehicle.run();
+		vehicle.electCharge();
 		
 		if(vehicle instanceof Bus){
 			System.out.println("변경 가능합니다.");
